@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>IMDB Movies</title>
+	
+	 <style type="text/css">
+    @import url("main.css");
+  </style>
+	<script type="text/javascript" src="fetchhtml.js"></script>
+</head>
+
+<body>
+
+  <header>
+  	
+    <h2 >IMDB Movies</h2>
+  
+  </header>
+
+  <main>
+  
+  <aside class="aform">
+  <div>
+  <form action="/rest/movie" method="get">
+    	<input type="submit" value="Genre" 
+         name="T Genre" id="frm1_submit" />
+         <input type="submit" value="Top 10 movies by Rating" 
+         name="TTop 10 movies by Rating" id="frm1_submit" />
+         <input type="submit" value="Most Popular" 
+         name="Most Popular" id="frm1_submit" />
+
+    <ul>
+      <li><a href="rest/movie" > Top 10 movies by Genre</a></li>
+      <li><a href=""> Top 10 movies by Rating</a></li>
+      <li><a href=""> Most Popular</a></li>
+    </ul>
+    
+    </form>
+  </div>
+   
+
+  </aside>
+ <section>
+ <h3> Movies</h3><br><br>
+ <ul id="name">
+  
+ </ul>
+
+ 
+ 
+ </section>
+ <section id="result">
+ 
+ </section>
+  </main>
+
+  <footer>
+	<p>&copy; 2016 Lei Cao</p>
+  </footer>
+</body>
+</html>
